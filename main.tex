@@ -1,4 +1,3 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %   大连理工大学硕士论文模板 —— 主文件 main.tex
@@ -16,79 +15,79 @@
 
 % 文档正文
 \begin{document}
-\begin{CJK}{GBK}{song}
-
-% 定义所有的图片文件在 figures 子目录下
-\graphicspath{{figures/}}
-
-% 文本格式定义
-\input{setup/format.tex}
-
-% 前言
-\frontmatter
-\pagenumbering{Roman}
-\input{preface/cover.tex}       % 封面
-%\originality                    % 独创性
-\makeabstract
-
-% 设置目录字体和行间距
-\defaultmenufont
-% 目录
-\tableofcontents
-\cleardoublepage
-% 插图目录
-%\listoffigures
-% 表格目录
-%\listoftables
-\cleardoublepage
-
-\defaultfont
-\mainmatter
-
-% 正文章节
-\defaultfont
-\renewcommand{\thefootnote}{\arabic{footnote}}
-\include{body/chap00}
-\include{body/chap01}
-\include{body/chap02}
-\include{body/chap03}
-
-% 结论
-\include{body/conclusion}
-\cleardoublepage
-%\backmatter
-
-% 参考文献
-\wuhao
-\bibliographystyle{GBT7714-2005NLang}
-\phantomsection
-\addcontentsline{toc}{chapter}{参考文献}
-\bibliography{body/reference}
-\cleardoublepage
-
-%附录
-\defaultfont
-\begin{appendix}
-   \input{appendix/chapA}
-\end{appendix}
-\cleardoublepage
-
-\defaultfont
-%发表的文章列表
-%\include{appendix/publications}
-\cleardoublepage
-%致谢
-\include{appendix/acknowledgements}
-\cleardoublepage
-%授权书
-%\chapter*{}
-%\addcontentsline{toc}{chapter}{大连理工大学学位论文版权使用授权书}
-%\renewcommand{\baselinestretch}{1.61}
-%\vspace{-0.48cm}
-%\authorization
-%\cleardoublepage
-
-\end{CJK}
+	\begin{CJK}{GBK}{song}
+		
+		% 定义所有的图片文件在 figures 子目录下
+		\graphicspath{{figures/}}
+		
+		% 文本格式定义
+		\input{setup/format.tex}
+		
+		% 前言
+		\frontmatter
+		\pagenumbering{Roman}
+		\input{preface/cover.tex}       % 封面
+		%\originality                    % 独创性
+%		\makeabstract
+		
+		% 设置目录字体和行间距
+		\defaultmenufont
+		% 目录
+		\tableofcontents
+		\cleardoublepage
+		% 插图目录
+		%\listoffigures
+		% 表格目录
+		%\listoftables
+		\cleardoublepage
+		
+		\defaultfont
+		\mainmatter
+		
+		% 正文章节
+		\defaultfont
+		\renewcommand{\thefootnote}{\arabic{footnote}}
+		\include{body/chap00}
+		\include{body/chap01}
+		\include{body/chap02}
+		\include{body/chap03}
+		
+		% 结论
+%		\include{body/conclusion}
+		\cleardoublepage
+		%\backmatter
+		
+		% 参考文献
+		\wuhao
+		\bibliographystyle{GBT7714-2005NLang}
+		\phantomsection
+		\addcontentsline{toc}{chapter}{参考文献}
+		\bibliography{body/reference}
+		\cleardoublepage
+		
+		%附录
+		\defaultfont
+		\begin{appendix}
+			\input{appendix/chapA}
+		\end{appendix}
+		\cleardoublepage
+		
+		\defaultfont
+		%发表的文章列表
+		%\include{appendix/publications}
+		\cleardoublepage
+		%致谢
+		\include{appendix/acknowledgements}
+		\cleardoublepage
+		%授权书
+		%\chapter*{}
+		%\addcontentsline{toc}{chapter}{大连理工大学学位论文版权使用授权书}
+		%\renewcommand{\baselinestretch}{1.61}
+		%\vspace{-0.48cm}
+		%\authorization
+		%\cleardoublepage
+		
+	\end{CJK}
 \end{document}
 
 %%%%%%%%%%%%%%%%%% End of the file  %%%%%%%%%%%%%%%%%%%%%%%%
